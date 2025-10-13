@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Teste de Reflexo</title>
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+    <div id="startScreen" class="screen pixel-border">
+        <h1 class="title">Teste de Reflexo ⚡</h1>
+        <p class="instructions">
+            Seu objetivo é clicar no quadrado verde assim que ele aparecer.
+            <br>
+            A tela ficará <span style="color: red; text-shadow: 0 0 5px red;">VERMELHA</span> enquanto você espera. Clicar antes da hora anula o teste.
+            <br>
+            Serão 5 rodadas. Sua pontuação é o Tempo Médio de Reação.
+        </p>
+        <label for="username">Digite seu nome para começar:</label>
+        <input type="text" id="username" placeholder="Seu Nome de Jogador" required>
+        <button id="startButton">Começar Teste</button>
+        <h3>Top 10 (Melhores Tempos)</h3>
+        <div class="initial-results" id="initialResults"></div>
+    </div>
+
+    <div class="game-container screen hidden" id="gameScreen">
+        <div class="container">
+            <div class="scoreboard">Último TR: <span id="score">...</span></div>
+            <div class="timer">Rodada: <span id="timer">...</span></div>
+            <div class="square" id="square"></div>
+        </div>
+        <div class="sidebar">
+            <h3>Placar Geral</h3>
+            <div class="results" id="results"></div>
+        </div>
+    </div>
+    
+    <div id="gameOverScreen" class="screen hidden pixel-border">
+        <h1 class="title">FIM DE TESTE</h1>
+        <p class="final-score">Usuário: <strong id="finalUsername"></strong></p>
+        <p class="final-score">Tempo Médio: <strong id="finalScore"></strong> ms</p>
+        
+        <div class="rating-container">
+            <h3>AVALIE O JOGO</h3>
+            <div id="ratingStars"></div>
+        </div>
+        
+        <button id="restartButton">Jogar Novamente</button>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
