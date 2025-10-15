@@ -1,4 +1,4 @@
-        const API_URL = 'https://winners-api-delta.vercel.app/api';
+        const API_URL = 'https://winnersapi-1.onrender.com/api';
         
         const gameState = {
             username: '',
