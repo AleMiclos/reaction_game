@@ -2,7 +2,7 @@
 <html lang="pt-BR">
 
 <head>
-    <meta charset="UTF-8">
+    <meta charset="UTF--8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Teste de Reflexo</title>
     <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
@@ -12,19 +12,26 @@
 <body>
 
     <div id="startScreen" class="screen pixel-border">
-        <h1 class="title">Teste de Reflexo ⚡</h1>
-        <p class="instructions">
-            Seu objetivo é clicar no quadrado verde assim que ele aparecer.
-            <br>
-            A tela ficará <span style="color: red; text-shadow: 0 0 5px red;">VERMELHA</span> enquanto você espera. Clicar antes da hora anula o teste.
-            <br>
-            Serão 5 rodadas. Sua pontuação é o Tempo Médio de Reação.
-        </p>
-        <label for="username">Digite seu nome para começar:</label>
-        <input type="text" id="username" placeholder="Seu Nome de Jogador" required>
-        <button id="startButton">Começar Teste</button>
-        <h3>Top 10 (Melhores Tempos)</h3>
-        <div class="initial-results" id="initialResults"></div>
+        
+        <div class="main-content">
+            <h1 class="title">Teste de Reflexo ⚡</h1>
+            <p class="instructions">
+                Seu objetivo é clicar no quadrado verde assim que ele aparecer.
+                <br>
+                A tela ficará <span style="color: red; text-shadow: 0 0 5px red;">VERMELHA</span> enquanto você espera. Clicar antes da hora anula o teste.
+                <br>
+                Serão 5 rodadas. Sua pontuação é o Tempo Médio de Reação.
+            </p>
+            <label for="username">Digite seu nome para começar:</label>
+            <input type="text" id="username" placeholder="Seu Nome de Jogador" required>
+            <button id="startButton">Começar Teste</button>
+        </div>
+
+        <div class="sidebar">
+            <h3>Top 10 (Melhores Tempos)</h3>
+            <div class="initial-results" id="initialResults"></div>
+        </div>
+
     </div>
 
     <div class="game-container screen hidden" id="gameScreen">
@@ -34,7 +41,7 @@
             <div class="square" id="square"></div>
         </div>
         <div class="sidebar">
-            <h3>Placar Geral</h3>
+            <h3>TOP 10</h3>
             <div class="results" id="results"></div>
         </div>
     </div>
